@@ -1,10 +1,10 @@
-# 🕵️‍♂️ FTP Hidden File Forensics CTF  
+# FTP Hidden File Forensics CTF  
 vsftpd 기반 FTP 서버에서 발생한 숨겨진 파일 업로드 사건을 분석하는 디지털 포렌식 CTF 문제입니다.  
 FTP 서비스 구조 이해 + 숨김 파일 탐지 + 로그 분석까지 모두 연습할 수 있는 기초 포렌식 문제입니다.
 
 ---
 
-## 📌 문제 개요
+## 문제 개요
 
 내부 FTP 서버에서 의심스러운 파일 업로드 흔적이 발견되었습니다.  
 로그 기록을 조사해보니 특정 계정(`ftpuser`)을 통해 **숨겨진 파일 (.secret_flag)** 이 업로드된 정황이 확인되었습니다.
@@ -21,7 +21,7 @@ FTP 서비스 구조 이해 + 숨김 파일 탐지 + 로그 분석까지 모두 
 
 ---
 
-# 🧩 시나리오
+# 시나리오
 
 당신은 보안 연구원이며, 서버 관리자로부터 다음 로그를 전달받았습니다:
 Mon Nov 24 20:11:22 2025 [pid 2] [ftpuser] OK UPLOAD: "/home/ftpuser/.secret_flag"
@@ -38,7 +38,7 @@ Mon Nov 24 20:11:22 2025 [pid 2] [ftpuser] OK UPLOAD: "/home/ftpuser/.secret_fla
 
 ---
 
-# ⚙️ 초기 세팅 방법 (CTF 환경 구축)
+# 초기 세팅 방법 (CTF 환경 구축)
 
 이 리포지토리에는 환경을 자동으로 구성해주는 `setup.sh` 스크립트가 포함되어 있습니다.  
 Ubuntu 환경에서 아래 명령만 실행하면 CTF 환경이 자동으로 구성됩니다.
